@@ -1,0 +1,43 @@
+<!-- task4/templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+            justify-content: center; /* Центрирование по вертикали */
+            height: 100vh; /* Полная высота экрана */
+            margin: 0; /* Удаляем отступы */
+            background-color: #f0f0f0; /* Цвет фона */
+            text-align: center; /* Центрирование текста */
+        }
+        h1 {
+            margin-bottom: 20px; /* Отступ для заголовка */
+        }
+        nav ul {
+            list-style-type: none; /* Удаляем маркеры списка */
+            padding: 0; /* Удаляем внутренние отступы */
+        }
+        nav ul li {
+            display: inline; /* Выстраиваем пункты навигации в строку */
+            margin: 0 15px; /* Отступы между пунктами */
+        }
+    </style>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'shop' %}">Магазин</a></li>
+            <li><a href="{% url 'cart' %}">Корзина</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

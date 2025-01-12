@@ -1,0 +1,30 @@
+<!-- task4/templates/cart.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+            justify-content: center; /* Центрирование по вертикали */
+            height: 100vh; /* Полная высота экрана */
+            margin: 0; /* Удаляем отступы */
+            background-color: #f0f0f0; /* Цвет фона */
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px; /* Отступ для заголовка */
+        }
+    </style>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <p>Извините, ваша корзина пуста!</p>
+    <a href="{% url 'shop' %}">Перейти в магазин</a>  <!-- Ссылка для перехода в магазин -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- task4/templates/shop.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+</head>
+<body>
+    <header>
+        <h1>Игры</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'shop' %}">Магазин</a></li>
+                <li><a href="{% url 'cart' %}">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Atomic Heart</h3>
+        <button type="button">Купить</button>
+        <h3>Cyberpunk2077</h3>
+        <button type="button">Купить</button>
+         <h3>PayDay2</h3>
+        <button type="button">Купить</button>
+    </main>
+</body>
+</html>

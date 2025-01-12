@@ -17,13 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('task2/', include('task2.urls')),  # Добавляем маршруты к приложению task2
-# ]
-
-
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('task3.urls')),
+    path('admin/', admin.site.urls),  # URL для админ-панели
+    path('', include('task4.urls')),  # Подключаем URLs приложения task4
 ]

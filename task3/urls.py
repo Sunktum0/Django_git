@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, store, cart
+from UrbanDjango.task3.views import home, store, cart
 
 urlpatterns = [
     path('', home, name='home'),

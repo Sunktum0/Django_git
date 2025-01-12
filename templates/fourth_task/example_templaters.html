@@ -1,0 +1,14 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block pagename %}Пример страницы{% endblock %}
+
+{% block content %}
+    <h1>Это пример страницы</h1>
+    <p>Здесь мы можем отображать различные данные.</p>
+    <h2>Игры:</h2>
+    <ul>
+        {% for game in games %}
+            <li>{{ game }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
