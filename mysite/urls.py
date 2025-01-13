@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # URL для админ-панели
-    path('', include('task4.urls')),  # Подключаем URLs приложения task4
+    path('admin/', admin.site.urls),
+    path('registration/', include('task5.urls')),  # Обработчик для registration
 ]
